@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Dream House">
+    <meta name="description" content="A única imobiliária que realiza sonhos!">
+    <link rel="shortcut icon" href="Images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Dream House</title>
+</head>
+<body>
+
+<!--Header-->
+
+<header class="header" data-header>
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="Images/logo.png" alt="Dream House">
+            <label class="headline-large label-medium logo-title">Dream House</label>
+        </a>
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+                <li>
+                    <a href="index.html" class="navbar-link label-medium active">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#quem-somos" class="navbar-link label-medium">
+                        Quem Somos
+                    </a>
+                </li>
+                <li>
+                    <a href="#feedbacks" class="navbar-link label-medium">
+                        Feedbacks
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navbar-link label-medium" id="navbar-favorite">
+                        Favoritos
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-wrapper">
+                <a href="login.html" class="btn-link label-medium">Login</a>
+                <a href="https://wa.me/5511959156765?text=Olá, eu gostaria de saber sobre as propriedades do site! Eu estou interessado(a)." target="_blank" ><button class="btn btn-fill label-medium">Começar</button></a>
+            </div>
+        </nav>
+        <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+            <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
+            <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+        </button>
+    </div>
+</header>
+
+<!--Fim Header-->
+
+<!--Hero-->
+<main>
+    <article>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="headline-large hero-title">Encontre um lugar onde você possa ser você mesmo!</h1>
+                    <p class="body-large hero-text">Se você está procurando um lugar onde possa ser você mesmo, não desista. Continue procurando até encontrar um lugar que pareça seu lar!</p>
+                </div>
+                <img src="Images/hero.png" width="816" height="659" role="presentation" class="hero-banner">
+                <img src="Images/bg-pattern.png" width="1240" height="840" role="presentation" class="bg-pattern">
+            </div>
+        </section>
+    </article>
+</main>
+
+<!--Fim Hero-->
+
+<!--Story-->
+
+<section class="section story">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <ul class="story-list">
+            <li class="story-card" style="background-image: url('./Images/property-foto13.jpg');">
+                <a href="#" class="overlay-content">
+                    <div>
+                        <div class="rating-wrapper">
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <data value="5" class="title-small rating-text">5.0</data>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="story-card" style="background-image: url('./Images/property-foto14.jpg');">
+                <a href="#" class="overlay-content">
+                    <div>
+                        <div class="rating-wrapper">
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <data value="5" class="title-small rating-text">5.0</data>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--Fim Story-->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="JS/card7.js" defer></script>
+</body>
+</html>

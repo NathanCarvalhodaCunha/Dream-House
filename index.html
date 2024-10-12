@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Dream House">
+    <meta name="description" content="A única imobiliária que realiza sonhos!">
+    <link rel="shortcut icon" href="Images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Dream House</title>
+</head>
+<body>
+
+<!--Header-->
+
+<header class="header" data-header>
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="Images/logo.png" alt="Dream House">
+            <label class="headline-large label-medium logo-title">Dream House</label>
+        </a>
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+                <li>
+                    <a href="index.html" class="navbar-link label-medium active">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#quem-somos" class="navbar-link label-medium">
+                        Quem Somos
+                    </a>
+                </li>
+                <li>
+                    <a href="#feedbacks" class="navbar-link label-medium">
+                        Feedbacks
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navbar-link label-medium" id="navbar-favorite">
+                        Favoritos
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-wrapper">
+                <a href="login.html" class="btn-link label-medium">Login</a>
+                <a href="https://wa.me/5511959156765?text=Olá, eu gostaria de saber sobre as propriedades do site! Eu estou interessado(a)." target="_blank" ><button class="btn btn-fill label-medium">Começar</button></a>
+            </div>
+        </nav>
+        <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+            <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
+            <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+        </button>
+    </div>
+</header>
+
+<!--Fim Header-->
+
+<!--Hero e Propriedades-->
+
+<main>
+    <article>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="headline-large hero-title">Encontre um lugar onde você possa ser você mesmo!</h1>
+                    <p class="body-large hero-text">Se você está procurando um lugar onde possa ser você mesmo, não desista. Continue procurando até encontrar um lugar que pareça seu lar!</p>
+                    <form action="./" method="get" class="search-bar">
+                        <label class="search-item">
+                            <span class="label-medium label">Busco</span>
+                            <select class="search-item-field body-medium">
+                                <option value="qualquer-tipo" selected>Qualquer</option>
+                                <option value="comprar" >Comprar</option>
+                                <option value="alugar" >Alugar</option>
+                            </select>
+                            <span class="material-symbols-rounded" aria-hidden="true">real_estate_agent</span>
+                        </label>
+                        <label class="search-item">
+                            <span class="label-medium label">Propriedade</span>
+                            <select class="search-item-field body-medium">
+                                <option value="qualquer-propriedade" selected>Qualquer</option>
+                                <option value="casa" >Casa</option>
+                                <option value="apartamento" >Apartamento</option>
+                                <option value="condominio" >Condomínio</option>
+                                <option value="chacara" >Chácara</option>
+                            </select>
+                            <span class="material-symbols-rounded" aria-hidden="true">gite</span>
+                        </label>
+                        <label class="search-item">
+                            <span class="label-medium label">Localização</span>
+                            <input type="text" name="location" placeholder="Cidade" class="search-item-field body-medium">
+                            <span class="material-symbols-rounded" aria-hidden="true">location_on</span>
+                        </label>
+                        <button type="button" class="search-btn"  id="button-search">
+                            <span class="material-symbols-rounded" aria-hidden="true">search</span>
+                            <span class="label-medium">Pesquisar</span>
+                        </button>
+                    </form>
+                </div>
+                <img src="Images/hero.png" width="816" height="659" role="presentation" class="hero-banner">
+                <img src="Images/bg-pattern.png" width="1240" height="840" role="presentation" class="bg-pattern">
+            </div>
+        </section>
+        <section class="section property" aria-labelledby="property-label">
+            <div class="container">
+                <div class="title-wrapper">
+                    <div>
+                        <h2 class="section-title headline-small">
+                            As melhores propriedades na sua cidade!
+                        </h2>
+                        <p class="section-text body-large">
+                            Você acha que todo lar é igual? Se a resposta for não, descubra o que temos para você, pois aqui temos tudo que você precisa para ser feliz!
+                        </p>
+                    </div>
+                    <a href="https://wa.me/5511959156765?text=Olá, eu gostaria de saber mais sobre a Dream House! Pode me dar mais informações?" target="_blank" class="btn btn-outline">
+                        <span class="label-medium">Saiba Mais</span>
+                        <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+                    </a>
+                </div>
+                <div class="property-list">
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="Images/property-1.jpg" width="585" height="390" alt="Dream House" class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">
+                                Vende-se
+                            </span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">
+                                R$800.000,00
+                            </span>
+                            <h3>
+                                <a href="#" class="title-small card-title">
+                                    Dream House
+                                </a>
+                                <a href="card1.html" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">photo</span>
+                                        Fotos
+                                    </div>
+                                </a>
+                                <a href="https://maps.app.goo.gl/DiKwHTfD8JSTKAwt8" target="_blank" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">location_on</span>
+                                        Mapa
+                                    </div>
+                                </a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                Bragança Paulista - SP
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                    <span class="meta-text label-medium">3 Quartos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                    <span class="meta-text label-medium">2 Banheiros</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">chair</span>
+                                    <span class="meta-text label-medium">2 Salas</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                    <span class="meta-text label-medium">1430 M²</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="Images/property-2.jpg" width="585" height="390" alt="Dream House" class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">
+                                Vende-se
+                            </span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">
+                                R$2.000.000,00
+                            </span>
+                            <h3>
+                                <a href="#" class="title-small card-title">
+                                    Dream House
+                                </a>
+                                <a href="card2.html" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">photo</span>
+                                        Fotos
+                                    </div>
+                                </a>
+                                <a href="https://maps.app.goo.gl/K8axxT61oJ4UhTQb7" target="_blank" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">location_on</span>
+                                        Mapa
+                                    </div>
+                                </a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                Atibaia - SP
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                    <span class="meta-text label-medium">5 Quartos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                    <span class="meta-text label-medium">4 Banheiros</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">chair</span>
+                                    <span class="meta-text label-medium">4 Salas</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                    <span class="meta-text label-medium">1630 M²</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="Images/property-3.jpg" width="585" height="390" alt="Dream House" class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">
+                                Vende-se
+                            </span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">
+                                R$3.200.000,00
+                            </span>
+                            <h3>
+                                <a href="#" class="title-small card-title">
+                                    Dream House
+                                </a>
+                                <a href="card3.html" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">photo</span>
+                                        Fotos
+                                    </div>
+                                </a>
+                                <a href="https://maps.app.goo.gl/kZCFtL11ZNDS2ZAq7" target="_blank" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">location_on</span>
+                                        Mapa
+                                    </div>
+                                </a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                Bragança Paulista - SP
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                    <span class="meta-text label-medium">8 Quartos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                    <span class="meta-text label-medium">5 Banheiros</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">chair</span>
+                                    <span class="meta-text label-medium">10 Salas</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                    <span class="meta-text label-medium">1240 M²</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="Images/property-4.jpg" width="585" height="390" alt="Dream House" class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">
+                                Vende-se
+                            </span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">
+                                R$1.600.000,00
+                            </span>
+                            <h3>
+                                <a href="#" class="title-small card-title">
+                                    Dream House
+                                </a>
+                                <a href="card4.html" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">photo</span>
+                                        Fotos
+                                    </div>
+                                </a>
+                                <a href="https://maps.app.goo.gl/zWP2jw3EvEdbPxuK6" target="_blank" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">location_on</span>
+                                        Mapa
+                                    </div>
+                                </a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                Bom Jesus dos Perdões - SP
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                    <span class="meta-text label-medium">6 Quartos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                    <span class="meta-text label-medium">6 Banheiros</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">chair</span>
+                                    <span class="meta-text label-medium">7 Salas</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                    <span class="meta-text label-medium">1260 M²</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="Images/property-5.jpg" width="585" height="390" alt="Dream House" class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">
+                                Aluga-se
+                            </span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">
+                                R$10.000,00
+                            </span>
+                            <h3>
+                                <a href="#" class="title-small card-title">
+                                    Dream House
+                                </a>
+                                <a href="card5.html" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">photo</span>
+                                        Fotos
+                                    </div>
+                                </a>
+                                <a href="https://maps.app.goo.gl/SCpc6anQ23uRa2PU7" target="_blank" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">location_on</span>
+                                        Mapa
+                                    </div>
+                                </a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                Bom Jesus dos Perdões - SP
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                    <span class="meta-text label-medium">8 Quartos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                    <span class="meta-text label-medium">8 Banheiros</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">chair</span>
+                                    <span class="meta-text label-medium">5 Salas</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                    <span class="meta-text label-medium">2350 M²</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="Images/property-6.jpg" width="585" height="390" alt="Dream House" class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">
+                                Aluga-se
+                            </span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">
+                                R$3.500,00
+                            </span>
+                            <h3>
+                                <a href="#" class="title-small card-title">
+                                    Dream House
+                                </a>
+                                <a href="card6.html" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">photo</span>
+                                        Fotos
+                                    </div>
+                                </a>
+                                <a href="https://maps.app.goo.gl/KW5jgYV7h2cjbMTb9" target="_blank" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">location_on</span>
+                                        Mapa
+                                    </div>
+                                </a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                Bom Jesus dos Perdões - SP
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                    <span class="meta-text label-medium">8 Quartos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                    <span class="meta-text label-medium">8 Banheiros</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">chair</span>
+                                    <span class="meta-text label-medium">6 Salas</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                    <span class="meta-text label-medium">1950 M²</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="Images/property-7.jpg" width="585" height="390" alt="Dream House" class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">
+                                Aluga-se
+                            </span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">
+                                R$5.000,00
+                            </span>
+                            <h3>
+                                <a href="#" class="title-small card-title">
+                                    Dream House
+                                </a>
+                                <a href="card7.html" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">photo</span>
+                                        Fotos
+                                    </div>
+                                </a>
+                                <a href="https://maps.app.goo.gl/K8kM7tgS7ZwQCTXa8" target="_blank" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">location_on</span>
+                                        Mapa
+                                    </div>
+                                </a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                Bom Jesus dos Perdões - SP
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                    <span class="meta-text label-medium">4 Quartos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                    <span class="meta-text label-medium">4 Banheiros</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">chair</span>
+                                    <span class="meta-text label-medium">2 Salas</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                    <span class="meta-text label-medium">1580 M²</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width: 585; --height: 390;">
+                                <img src="Images/property-8.jpg" width="585" height="390" alt="Dream House" class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">
+                                Aluga-se
+                            </span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">
+                                R$4.000,00
+                            </span>
+                            <h3>
+                                <a href="#" class="title-small card-title">
+                                    Dream House
+                                </a>
+                                <a href="card8.html" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">photo</span>
+                                        Fotos
+                                    </div>
+                                </a>
+                                <a href="https://maps.app.goo.gl/1ARDW5SUxAFrxHXo9" target="_blank" class="title-small card-title">
+                                    <div class="meta-item title-small card-title">
+                                        <span class="material-symbols-rounded meta-icon" aria-hidden="true">location_on</span>
+                                        Mapa
+                                    </div>
+                                </a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                Atibaia - SP
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                                    <span class="meta-text label-medium">3 Quartos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                                    <span class="meta-text label-medium">2 Banheiros</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">chair</span>
+                                    <span class="meta-text label-medium">2 Salas</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                                    <span class="meta-text label-medium" id="quem-somos">1120 M²</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--Features-->
+
+        <section class="section feature" aria-labelledby="feature-label">
+            <div class="container">
+                <figure class="feature-banner">
+                    <img src="Images/Logo Dream House.png" width="1020" height="690" loading="lazy" alt="Feature Banner" class="img-cover">
+                </figure>
+                <div class="feature-content">
+                    <h2 class="headline-medium" id="feature-label">
+                        Somos especializados em propriedades de qualidade!
+                    </h2>
+                    <p class="body-large feature-text">
+                        Quer achar uma casa que reflita seu estilo e personalidade? Não procure mais, nossa equipe de especialistas em vendas te ajudam a procurar e transformar seus sonhos em realidade!
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                            <span class="body-medium">
+                                Profissionais Especializados
+                            </span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                            <span class="body-medium">
+                                Comprometimento Total
+                            </span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                            <span class="body-medium">
+                                Suporte 24 horas por dia
+                            </span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                            <span class="body-medium">
+                                Experiência
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section feature feature-2" aria-labelledby="feature-label-2">
+            <div class="container">
+                <figure class="feature-banner">
+                    <img src="Images/feature-banner-1.jpg" width="1020" height="690" loading="lazy" alt="Feature Banner" class="img-cover">
+                </figure>
+                <div class="feature-content">
+                    <h2 class="headline-medium" id="feature-label-2">
+                        Propriedades de alto padrão!
+                    </h2>
+                    <p class="body-large feature-text">
+                        Está procurando propriedades que chamem a atenção e demonstrem o quanto de poder você possui? Nós da Dream House temos como o objetivo te ajudar a tornar seus sonhos em realidade, com a maior facilidade que temos hoje em dia!
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                            <span class="body-medium">
+                                Segurança 24 horas por dia
+                            </span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                            <span class="body-medium">
+                                Estilo de vida excepcional
+                            </span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                            <span class="body-medium">
+                                Casa Inteligente
+                            </span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+                            <span class="body-medium" id="feedbacks">
+                                Bela Paisagem
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<!--Fim Features-->
+        
+    </article>
+</main>
+
+<!--Fim Hero e Propriedades-->
+
+<!--Story-->
+
+<section class="section story">
+    <div class="container">
+        <div class="title-wrapper">
+            <div>
+                <p class="section-subtitle title-medium">
+                    Nossos Clientes:
+                </p>
+                <h2 class="section-title headline-medium">
+                    Ajudamos mais de 1.000 famílias a encontrar seu verdadeiro lar!
+                </h2>
+                <ul class="avatar-list">
+                    <li class="avatar">
+                        <img src="Images/avatar-1.jpg" width="120" height="80" loading="lazy" alt="João" class="img-cover">
+                    </li>
+                    <li class="avatar">
+                        <img src="Images/avatar-2.jpg" width="120" height="80" loading="lazy" alt="Maria" class="img-cover">
+                    </li>
+                    <li class="avatar">
+                        <img src="Images/avatar-3.jpg" width="120" height="80" loading="lazy" alt="Lucas" class="img-cover">
+                    </li>
+                    <li class="avatar">
+                        <img src="Images/avatar-4.jpg" width="120" height="80" loading="lazy" alt="Pedro" class="img-cover">
+                        <div class="overlay-content">
+                            <span class="label-medium">99+</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="https://wa.me/5511959156765?text=Olá, eu gostaria de ver todos os feedbacks sobre a Dream House!" target="_blank" class="btn btn-outline">
+                <span class="label-medium">Ver todos os feedbacks</span>
+                <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+            </a>
+        </div>
+        <ul class="story-list">
+            <li class="story-card" style="background-image: url('./Images/story-1.jpg');">
+                <a href="#" class="overlay-content">
+                    <div>
+                        <h3 class="title-small">
+                            João da Silva
+                        </h3>
+                        <div class="rating-wrapper">
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <data value="5" class="title-small rating-text">5.0</data>
+                        </div>
+                    </div>
+                    <figure class="card-avatar">
+                        <img src="Images/story-avatar-1.jpg" width="56" height="56" loading="lazy" alt="João da Silva" class="img-cover">
+                    </figure>
+                </a>
+            </li>
+            <li class="story-card" style="background-image: url('./Images/story-2.jpg');">
+                <a href="#" class="overlay-content">
+                    <div>
+                        <h3 class="title-small">
+                            Carlos Alberto
+                        </h3>
+                        <div class="rating-wrapper">
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <data value="5" class="title-small rating-text">5.0</data>
+                        </div>
+                    </div>
+                    <figure class="card-avatar">
+                        <img src="Images/story-avatar-2.jpg" width="56" height="56" loading="lazy" alt="Carlos Alberto" class="img-cover">
+                    </figure>
+                </a>
+            </li>
+            <li class="story-card" style="background-image: url('./Images/story-3.jpg');">
+                <a href="#" class="overlay-content">
+                    <div>
+                        <h3 class="title-small">
+                            Maria Hiroshuki
+                        </h3>
+                        <div class="rating-wrapper">
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <data value="5" class="title-small rating-text">5.0</data>
+                        </div>
+                    </div>
+                    <figure class="card-avatar">
+                        <img src="Images/story-avatar-3.jpg" width="56" height="56" loading="lazy" alt="Maria Hiroshuki" class="img-cover">
+                    </figure>
+                </a>
+            </li>
+            <li class="story-card" style="background-image: url('./Images/story-4.jpg');">
+                <a href="#" class="overlay-content">
+                    <div>
+                        <h3 class="title-small">
+                            Ana Carolina
+                        </h3>
+                        <div class="rating-wrapper">
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <data value="5" class="title-small rating-text">5.0</data>
+                        </div>
+                    </div>
+                    <figure class="card-avatar">
+                        <img src="Images/story-avatar-4.jpg" width="56" height="56" loading="lazy" alt="Ana Carolina" class="img-cover">
+                    </figure>
+                </a>
+            </li>
+            <li class="story-card" style="background-image: url('./Images/story-5.jpg');">
+                <a href="#" class="overlay-content">
+                    <div>
+                        <h3 class="title-small">
+                            Matheus José
+                        </h3>
+                        <div class="rating-wrapper">
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <data value="5" class="title-small rating-text">5.0</data>
+                        </div>
+                    </div>
+                    <figure class="card-avatar">
+                        <img src="Images/story-avatar-5.jpg" width="56" height="56" loading="lazy" alt="Matheus José" class="img-cover">
+                    </figure>
+                </a>
+            </li>
+            <li class="story-card" style="background-image: url('./Images/story-6.jpg');">
+                <a href="#" class="overlay-content">
+                    <div>
+                        <h3 class="title-small">
+                            Raffaela de Carvalho
+                        </h3>
+                        <div class="rating-wrapper">
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+                            <data value="5" class="title-small rating-text">5.0</data>
+                        </div>
+                    </div>
+                    <figure class="card-avatar">
+                        <img src="Images/story-avatar-6.jpg" width="56" height="56" loading="lazy" alt="Raffaela de Carvalho" class="img-cover">
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--Fim Story-->
+
+<!--Footer-->
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="Images/logo.png"alt="Dream House">
+                </a>
+                <label class="headline-large label-medium logo-title">Dream House</label>
+                <p class="body-medium footer-text">
+                    A única imobiliária que realiza sonhos!
+                </p>
+            </div>
+            <nav class="footer-nav" aria-labelledby="nav-label-1">
+                <p class="title-small footer-list-title" id="nav-label-1">
+                    Links Rápidos
+                </p>
+                <ul class="footer-list">
+                    <li>
+                        <a href="index.html" class="body-medium footer-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#quem-somos" class="body-medium footer-link">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="#feedbacks" class="body-medium footer-link">Feedbacks</a>
+                    </li>
+                    <li id="footer-favorite">
+                        <a href="#" class="body-medium footer-link">Favoritos</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer-nav" aria-labelledby="nav-label-2">
+                <p class="title-small footer-list-title" id="nav-label-2">
+                    Suporte
+                </p>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#" class="body-medium footer-link">Contate-nos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="body-medium footer-link">Política de Privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#" class="body-medium footer-link">Termos e Condições</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer-nav" aria-labelledby="nav-label-3">
+                <p class="title-small footer-list-title" id="nav-label-3">
+                    Entre em contato
+                </p>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#" class="body-medium footer-link">dreamhouse@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5511959156765" target="_blank" class="body-medium footer-link">+55(11)95915-6765</a>
+                    </li>
+                    <li>
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <img src="Images/facebook.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <img src="Images/twitter.svg" alt="Twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <img src="Images/insta.svg" alt="Instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="copyright body-medium">
+                © Copyright 2024 Nathan Carvalho | DEV
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!--Fim Footer-->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="JS/script.js" defer></script>
+</body>
+</html>

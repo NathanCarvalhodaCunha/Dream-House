@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Dream House">
+    <meta name="description" content="A única imobiliária que realiza sonhos!">
+    <link rel="shortcut icon" href="Images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>Dream House</title>
+</head>
+<body>
+
+<!--Forms-->
+
+    <div class="container">
+        <div class="signin-signup">
+            <form class="sign-in-form">
+                <h2 class="title">
+                    Entrar
+                </h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Nome de Usuário">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Senha">
+                </div>
+                <a href="index.html"><input type="button" value="Login" class="btn"></a>
+                <p class="social-text">
+                    Ou entre com suas redes sociais
+                </p>
+                <div class="social-media">
+                    <a href="#" class="social-icon" id="icon-facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon" id="icon-instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" id="icon-twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" id="icon-google">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+                <p class="account-text">
+                    Não possui conta? <a href="#" id="sign-up-btn2">Cadastre-se</a>
+                </p>
+            </form>
+            <form class="sign-up-form">
+                <h2 class="title">
+                    Cadastre-se
+                </h2>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Nome de Usuário">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Senha">
+                </div>
+                <a href="#"><input type="button" value="Cadastrar" class="btn" id="button-register"></a>
+                <p class="social-text">
+                    Ou cadastre-se com suas redes sociais
+                </p>
+                <div class="social-media">
+                    <a href="#" class="social-icon" id="icon-facebook2">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon" id="icon-instagram2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" id="icon-twitter2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" id="icon-google2">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+                <p class="account-text">
+                    Já possui conta? <a href="#" id="sign-in-btn2">Entrar</a>
+                </p>
+            </form>
+        </div>
+
+<!--Fim Forms-->
+
+<!--Panels-->
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>
+                        Já possui conta?
+                    </h3>
+                    <p>
+                        Para se conectar faça login com suas informações pessoais
+                    </p>
+                    <button class="btn" id="sign-in-btn">Login</button>
+                </div>
+                <img src="Images/sign-in.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>
+                        Não possui conta?
+                    </h3>
+                    <p>
+                        Insira seus dados pessoais e comece sua jornada conosco
+                    </p>
+                    <button class="btn" id="sign-up-btn">Cadastrar</button>
+                </div>
+                <img src="Images/sign-up.svg" alt="" class="image">
+            </div>
+        </div>
+    </div>
+
+<!--Fim Panels-->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="JS/login.js"></script>
+</body>
+</html>
